@@ -1,0 +1,468 @@
+.h {
+	display: none!important;
+}
+
+* {
+	border-collapse: collapse;
+}
+
+@font-face{
+	font-family: 'proximanova';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?iefix') format('eot'),
+	url('../fonts/ProximaNova-Regular.woff') format('woff'),
+	url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'proximanova';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?iefix') format('eot'),
+	url('../fonts/ProximaNova-Bold.woff') format('woff'),
+	url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: 900;
+	font-style: bold;
+}
+@font-face{
+	font-family: 'proximanova';
+	src: url('../fonts/ProximaNova-BoldIt.eot');
+	src: url('../fonts/ProximaNova-BoldIt.eot?iefix') format('eot'),
+	url('../fonts/ProximaNova-BoldIt.woff') format('woff'),
+	url('../fonts/ProximaNova-BoldIt.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+* {
+	outline: none;
+}
+
+html {
+	font-family: proximanova;
+	color: white;
+}
+
+body {
+	background: url(../images/bg.png) no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+
+#header {
+	height: 180px;
+	position: relative;
+}
+
+#hlogo {
+	position: absolute;
+	left: 100px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#head-blocks {
+	position: absolute;
+	top: 60px;
+	left: 400px;
+}
+
+.head-block {
+	display: inline-block;
+	padding: 0 50px;
+	font-size: 25px;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+#vk-button {
+
+	height: 50px;
+	width: fit-content;
+	position: absolute;
+	right: 30px;
+	top: 50px;
+
+	font-size: 18px;
+	font-weight: lighter;
+
+	cursor: pointer;
+	color: #ffffff;
+	background: transparent;
+	padding: 5px 25px;
+	border-radius: 25px;
+
+	border: 2px solid rgba(255,255,255,0.9);
+}
+
+#vk-button * {
+	vertical-align: middle;
+}
+
+#footer {
+
+	background: rgb(30,30,30);
+	border-top: 30px solid #212021;
+
+	width: 100%;
+
+	height: 200px;
+	position: relative;
+
+}
+
+#footer-sections {
+	width: 80%;
+	height: 90%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+
+    white-space: nowrap;
+
+}
+
+.section {
+	display: inline-block;
+	height: 100%;
+
+    vertical-align: middle;
+}
+
+[colored] {
+	color: #c54849;
+}
+
+[gray] {
+	color: #646464;
+}
+
+[silver] {
+	color: #dfdfdf;
+}
+[white] {
+	color: #ffffff;
+}
+
+.bottom-label {
+	font-size: 17px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#main-info {
+	height: 500px;
+	position: relative;
+	width: 65%;
+	margin: auto;
+	margin-top: 30px;
+
+	background: url(../images/bg1.png) no-repeat;
+	background-position: 5% center;
+
+}
+#servers-info {
+	height: fit-content;
+	position: relative;
+	width: 500px;
+	margin: auto;
+	margin-top: 30px;
+
+	padding-bottom: 20px;
+
+	background: #171616;
+
+}
+
+#how-to-start {
+	height: fit-content;
+	position: relative;
+	width: 1209px;
+	height: 767px;
+	margin: auto;
+
+	background: url(../images/howtoplay.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+
+	padding-bottom: 20px;
+
+	margin-top: 130px;
+	margin-bottom: 50px;
+
+}
+
+#servers-info::before {
+	content: "";
+
+	position: absolute;
+	top: calc(100% - 70px);
+	left: -80px;
+
+	width: 252px;
+	height: 133px;
+
+	background: url(../images/tr1.png) no-repeat;
+}
+
+#car-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#main-info-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	height: fit-content;
+	font-size: 22px;
+}
+
+.button {
+	background: #c54849;
+	padding: 15px 45px;
+	font-size: 22px;
+	color: white;
+	border: 0;
+	transition: all 0.3s ease;
+}
+.button:hover {
+	background: #f54849;
+}
+
+.server-info {
+	height: 130px;
+	width: 80%;
+	margin: auto;
+	position: relative;
+	font-size: 22px;
+}
+
+.progressbar {
+	background: #101010;
+
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 8px;
+
+	margin: auto;
+
+}
+
+.progressbar-active {
+	background: #c54849;
+}
+
+.server-name {
+	position: absolute;
+	left: 0;
+	top: 15px;
+
+}
+.server-online {
+	position: absolute;
+	right: 0;
+	top: 15px;
+
+}
+.server-ip {
+	position: absolute;
+	right: 0;
+	top: 65px;
+
+}
+
+#htp-top-label {
+	position: absolute;
+	top: 00px;
+	font-size: 30px;
+	width: fit-content;
+	font-weight: bold;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+
+#htp-top-label::before {
+	content: "";
+	width: 45px;
+	height: 5px;
+	left: 0;
+	top: calc(100% + 5px);
+	position: absolute;
+	background: #c54849;
+}
+
+#htp-bottom-label {
+	position: absolute;
+	bottom: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	font-style: italic;
+}
+
+.htp-block {
+	font-size: 22px;
+}
+
+.htp-block * {
+	vertical-align: middle;
+}
+
+.htp-block div {
+	display: inline-block;
+}
+
+#htp-1 {
+	position: absolute;
+    top: 130px;
+    left: 20px;
+}
+
+#htp-2 {
+	position: absolute;
+	top: 300px;
+	right: 0;
+}
+
+#htp-3 {
+	position: absolute;
+    top: 490px;
+    left: 100px;
+}
+
+.complect {
+
+	display: inline-block;
+
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+
+}
+
+#donate-window {
+	margin: 100px auto;
+	font-size: 22px;
+	background: rgba(0, 0, 0, 0.7);
+	width: 850px;
+	height: 350px;
+	position: relative;
+
+}
+
+
+#donate-window::before {
+	content: "";
+	z-index: -1;
+	width: 844px;
+	height: 496px;
+	position: absolute;
+	top: 240px;
+	left: 40%;
+	background: url(../images/tr2.png) no-repeat;
+}
+
+#donate-window table {
+	position: absolute;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+
+}
+
+#donate-window * {
+	width: 362px;
+	height: 87px;
+}
+
+input {
+	background: #161616;
+	border: 0;
+	outline: none;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	display: block;
+
+}
+
+.input-div {
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.input-div::after {
+	content: "";
+
+	left: 20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+}
+
+#donat-login {
+	position: absolute;
+	top: 80px;
+	right: 45px;
+
+	--bg: url(../images/login.png) no-repeat;
+}
+
+#donat-sum {
+	position: absolute;
+	bottom: 80px;
+	left: 45px;
+
+	--bg: url(../images/sum.png) no-repeat;
+}
+
+#donat-server {
+	position: absolute;
+	top: 80px;
+	left: 45px;
+
+}
+
+#donat-server::after { background: url(../images/server.png) no-repeat;  }
+#donat-login::after { background: url(../images/login.png) no-repeat;  }
+#donat-sum::after { background: url(../images/sum.png) no-repeat;  }
+
+#donat-button {
+	position: absolute;
+	bottom: 80px;
+	right: 45px;
+}
